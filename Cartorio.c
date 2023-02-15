@@ -127,6 +127,7 @@ int main() // funcao principal
 	printf("\t1 - Registrar Nomes\n"); // /t serve para fazer separação e espaço
 	printf("\t2 - Consultar Nomes\n");
 	printf("\t3 - Deletar Nomes\n");
+	printf("\t4 - Sair do Sistema:\n");
 	printf("Opção: "); // fim do menu
 	
 	scanf("%d",&opcao); // armazena na variavel opcao, variavel inteira (numero)
@@ -144,6 +145,10 @@ int main() // funcao principal
 		case 3: //mesma coisa do 1
 			deletar();
 		break;
+		case 4:
+			printf("Obrigado por utilizar o sistema.\n");
+			return 0;
+			break;
 		
 		default: // opcao feita para se ele escrever um numero diferente de 1 a 3
 			printf("Por Favor, escolha um numero de 1 a 3\n");
